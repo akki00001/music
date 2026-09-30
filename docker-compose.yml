@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: lahore-music-house
+    restart: unless-stopped
+    ports:
+      - "8080:80"
