@@ -1,0 +1,403 @@
+/* ==========================================================================
+   LAHORE MUSIC HOUSE - GLOBAL SUBPAGE THEME
+   Unified Color Scheme: Vibrant Orchid (#B436E2) & Royal Electric Violet (#8257F1)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* --- TYPOGRAPHY OVERRIDES --- */
+body, html body, p, div, span, input, select, textarea, td, th, li, a {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .hd_NT, .hText h1, .hText h2, .hText h3, .com_title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  letter-spacing: -0.01em;
+}
+
+.brand-title, .company_logo .com_title a {
+  font-family: 'Cinzel', serif !important;
+}
+
+/* --- COLOR VARIABLES & GRADIENTS --- */
+:root {
+  --lmh-orchid: #B436E2;
+  --lmh-violet: #8257F1;
+  --lmh-gradient: linear-gradient(135deg, #B436E2 0%, #8257F1 100%);
+  --lmh-gradient-hover: linear-gradient(135deg, #c84bf4 0%, #966ff5 100%);
+  --lmh-glow: 0 6px 25px rgba(180, 54, 226, 0.35);
+  --lmh-glow-strong: 0 8px 30px rgba(180, 54, 226, 0.55);
+}
+
+/* --- TOP UTILITY BAR --- */
+.headRw_f3.smsEmailTop,
+.smsEmailTop,
+.theme1,
+.headRw_f3 {
+  background: #090712 !important;
+  color: #cdc6e8 !important;
+  border-bottom: 2px solid #B436E2 !important;
+}
+
+.headRw_f3 a,
+.smsEmailTop a {
+  color: #d8d0f4 !important;
+  transition: all 0.25s ease !important;
+}
+
+.headRw_f3 a:hover,
+.smsEmailTop a:hover {
+  color: #e593ff !important;
+}
+
+.headRw_f3 i.fa,
+.smsEmailTop i.fa {
+  color: #B436E2 !important;
+}
+
+.gstNo {
+  background: rgba(180, 54, 226, 0.15) !important;
+  border: 1px solid rgba(180, 54, 226, 0.4) !important;
+  border-radius: 6px !important;
+  padding: 3px 10px !important;
+  color: #e593ff !important;
+}
+
+/* --- MAIN HEADER & LOGO BAR --- */
+.fixer, .fixer.bg_df, .leftLogo.bg_df {
+  background: rgba(10, 8, 22, 0.97) !important;
+  border-bottom: 1.5px solid rgba(180, 54, 226, 0.3) !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.fixer .fw6, .fixer p, .fixer td {
+  color: #f1edfc !important;
+}
+
+.fixer .dif, .fixer .dif i, .fixer .dif svg {
+  color: #B436E2 !important;
+}
+
+.fixer a:hover {
+  color: #e593ff !important;
+}
+
+.company_logo img {
+  border: 1.5px solid #8257F1 !important;
+  border-radius: 8px !important;
+  padding: 4px 8px !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 15px rgba(130, 87, 241, 0.35) !important;
+}
+
+/* --- NAVIGATION BAR --- */
+nav.f1, nav.f2, nav.f3, .theme2, .leftNav, .cenNav {
+  background: linear-gradient(135deg, #100d24 0%, #1a1438 100%) !important;
+  border-bottom: 1.5px solid rgba(180, 54, 226, 0.35) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.ddsmoothmenu ul li a {
+  color: #dcd6f5 !important;
+  font-weight: 600 !important;
+  padding: 10px 18px !important;
+  transition: all 0.25s ease !important;
+  border-radius: 6px !important;
+}
+
+.ddsmoothmenu > ul > li > a.selected,
+.ddsmoothmenu ul li a:hover,
+.ddsmoothmenu ul li.on > a,
+nav.f1 .ddsmoothmenu ul li.on > a,
+nav.f1 .ddsmoothmenu ul li a:hover {
+  background: linear-gradient(135deg, #B436E2 0%, #8257F1 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(180, 54, 226, 0.45) !important;
+}
+
+/* Submenu Dropdown */
+.ddsmoothmenu ul li ul,
+.menu_style {
+  background: #141029 !important;
+  border: 1.5px solid rgba(180, 54, 226, 0.4) !important;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.6), 0 0 20px rgba(180, 54, 226, 0.2) !important;
+  border-radius: 10px !important;
+  padding: 8px 0 !important;
+}
+
+.ddsmoothmenu ul li ul a,
+.menu_style li a {
+  color: #d6cef5 !important;
+  padding: 8px 18px !important;
+  font-size: 0.9rem !important;
+}
+
+.ddsmoothmenu ul li ul a:hover,
+.ddsmoothmenu ul li ul li.on > a,
+.menu_style li.on > a,
+.menu_style li:hover > a {
+  background: rgba(180, 54, 226, 0.2) !important;
+  color: #e593ff !important;
+  padding-left: 22px !important;
+}
+
+/* --- BUTTONS --- */
+a.buttonBig, input.buttonBig, .buttonBig a, .buttonBig,
+.smsBtn, .btn-primary {
+  background: linear-gradient(135deg, #B436E2 0%, #8257F1 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 18px rgba(180, 54, 226, 0.4) !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+
+a.buttonBig:hover, input.buttonBig:hover, .buttonBig a:hover,
+.smsBtn:hover, .btn-primary:hover {
+  background: linear-gradient(135deg, #c84bf4 0%, #966ff5 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(180, 54, 226, 0.6) !important;
+}
+
+a.button, .button a, input.button, button.site-btn, a.site-btn {
+  background: #8257F1 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 2px 10px rgba(130, 87, 241, 0.3) !important;
+}
+
+a.button:hover, .button a:hover, input.button:hover {
+  background: #B436E2 !important;
+  box-shadow: 0 4px 18px rgba(180, 54, 226, 0.45) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* --- BREADCRUMBS --- */
+.bcrumb, .breadcrumb, #middle .bcrumb {
+  background: #f7f4fc !important;
+  border-bottom: 1px solid #e7dff7 !important;
+  padding: 12px 0 !important;
+  font-size: 0.88rem !important;
+}
+
+.bcrumb a {
+  color: #8257F1 !important;
+  font-weight: 600 !important;
+}
+
+.bcrumb a:hover {
+  color: #B436E2 !important;
+}
+
+/* --- HEADINGS & TITLES --- */
+.h2 h1, .h2 h2, .h2 h3,
+.hd_h2 h1, .hd_h2 h2, .hd_h2 h3,
+.hd_NT, h1, h2, h3 {
+  color: #120e26 !important;
+}
+
+.head-c1, .head-c2, .dif, .dif a, a.dif, .theme4c {
+  color: #B436E2 !important;
+}
+
+.rHead, .rHead a {
+  color: #8257F1 !important;
+}
+
+/* --- PRODUCT DETAILS & LISTING CARDS --- */
+.single-product,
+.product-box,
+.product_box,
+.slider ul li > div,
+.item-box,
+.resort-box,
+.resort-box2 {
+  border-radius: 12px !important;
+  border: 1.5px solid #e7def7 !important;
+  background: #ffffff !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 10px rgba(20, 16, 38, 0.05) !important;
+}
+
+.single-product:hover,
+.slider ul li > div:hover,
+.product-box:hover {
+  border-color: #B436E2 !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 30px rgba(180, 54, 226, 0.22) !important;
+}
+
+.imgFrame {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+.theme2Bdr, .theme1Bdr, .themeBdr {
+  border-color: #B436E2 !important;
+}
+
+/* --- SPECIFICATION TABLES --- */
+table.tblRegular, table.specTable, .company_details table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1.5px solid #e7def7 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  margin: 16px 0 !important;
+}
+
+table.tblRegular td, table.specTable td {
+  border-color: #ebe4f8 !important;
+  padding: 10px 14px !important;
+}
+
+table.tblRegular tr:nth-child(even),
+.evenOdd section:nth-child(even) {
+  background-color: #faf8fd !important;
+}
+
+/* --- SIDEBAR & WIDGETS --- */
+.column_Box {
+  border: 1.5px solid #e8e0f8 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(20, 16, 38, 0.05) !important;
+}
+
+.column_Box .h,
+.column_Box .h2 {
+  background: linear-gradient(135deg, #110e24 0%, #1c153b 100%) !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid #B436E2 !important;
+  padding: 12px 16px !important;
+}
+
+.column_Box .h h3,
+.column_Box .h p {
+  color: #ffffff !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 1.05rem !important;
+}
+
+.column_Box .ic ul li {
+  border-bottom: 1px solid #f0eafc !important;
+  padding: 8px 12px !important;
+}
+
+.column_Box .ic ul li a {
+  color: #4b4468 !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.column_Box .ic ul li a:hover {
+  color: #B436E2 !important;
+  padding-left: 6px !important;
+}
+
+/* --- TABS --- */
+#middle .ui-tabs-nav,
+.myTabs .ui-tabs-nav {
+  border-bottom: 2px solid #e7def7 !important;
+}
+
+#middle .ui-tabs-nav li.ui-tabs-active a,
+#middle .ui-tabs-nav li.ui-tabs-selected a,
+#middle .ui-tabs-nav a:hover {
+  background: linear-gradient(135deg, #B436E2 0%, #8257F1 100%) !important;
+  color: #ffffff !important;
+  border-radius: 8px 8px 0 0 !important;
+  box-shadow: 0 4px 15px rgba(180, 54, 226, 0.35) !important;
+}
+
+/* --- FORMS & ENQUIRY BOXES --- */
+.enq-frm, .inqBg, .inqCont-bg, .sendEnq {
+  border-radius: 14px !important;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"],
+select, textarea, .input {
+  border: 1.5px solid #dcd4f5 !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  font-size: 0.92rem !important;
+  transition: all 0.25s ease !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #B436E2 !important;
+  box-shadow: 0 0 0 3px rgba(180, 54, 226, 0.2) !important;
+  outline: none !important;
+}
+
+/* --- FOOTER OVERRIDES --- */
+footer, #footerFormat1 {
+  background: #080612 !important;
+  color: #cdc5e8 !important;
+  border-top: 3px solid #B436E2 !important;
+  position: relative !important;
+}
+
+footer h3, footer h5, footer .h h3, footer .dif {
+  color: #ffffff !important;
+  font-family: 'Cinzel', serif !important;
+}
+
+footer a {
+  color: #aaa2cf !important;
+  transition: all 0.25s ease !important;
+}
+
+footer a:hover {
+  color: #e593ff !important;
+}
+
+footer .bdrT, footer .bdrB {
+  border-color: rgba(180, 54, 226, 0.2) !important;
+}
+
+footer .copyright a {
+  color: #B436E2 !important;
+  font-weight: 700 !important;
+}
+
+/* --- FLOATING CONTROLS --- */
+#toTop, .ui-totop {
+  background: linear-gradient(135deg, #B436E2 0%, #8257F1 100%) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 6px 20px rgba(180, 54, 226, 0.4) !important;
+  border: none !important;
+}
+
+.whChatSec {
+  border: 2px solid #8257F1 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.5), 0 0 20px rgba(130, 87, 241, 0.3) !important;
+}
+
+.whHdSec {
+  background: linear-gradient(135deg, #B436E2 0%, #8257F1 100%) !important;
+  color: #ffffff !important;
+}
+
+/* --- HIDE ALL PRICES GLOBALLY --- */
+.clfd-price,
+.price,
+.prod-price,
+.product-price,
+.getPrEntInp,
+.fa-inr,
+.fa-inr + span,
+.fa-inr + b,
+div:has(> b > .fa-inr),
+div:has(> .fa-inr),
+span:has(> .fa-inr) {
+  display: none !important;
+}
+
