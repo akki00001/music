@@ -2,14 +2,15 @@
 # Lahore Music House - Hostinger (.htaccess) Configuration
 # ==============================================================================
 
+DirectoryIndex index.html index.htm index.php
+
 # Enable Rewrite Engine
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # Force HTTPS (SSL)
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # Route root traffic cleanly to main catalog index
+    RewriteRule ^$ www.lahoremusichouse.in/index.html [L]
 
     # Clean Trailing Slash
     RewriteCond %{REQUEST_FILENAME} !-d
